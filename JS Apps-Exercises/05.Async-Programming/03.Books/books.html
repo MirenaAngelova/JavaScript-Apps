@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        input {
+            display: block;
+        }
+        
+        div {
+            border: 1px solid black;
+            padding: 5px;
+            display: inline-table;
+            width: 24%;
+        }
+        
+        div#aside {
+            margin-top: 8px;
+            width: 15%;
+            border: 2px solid grey;
+        }
+        
+        div#books {
+            width: auto;
+        }
+        
+        button {
+            display: inline-table;
+            margin: 5% 0 5% 5%;
+            width: 39%;
+        }
+        
+        button.add {
+            width: 90%;
+        }
+        
+        button.load {
+            width: 90%;
+            padding: 10px;
+        }
+        
+        button.load {
+            vertical-align: top;
+        }
+        
+        fieldset {
+            display: inline-table;
+            vertical-align: top;
+        }
+        
+        fieldset#main {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset id="main">
+        <legend>Catches</legend>
+        <div id="books">
+        </div>
+    </fieldset>
+    <div id="aside">
+        <button class="load">Load</button>
+        <fieldset id="addForm">
+            <legend>Add Catch</legend>
+            <label>Title:</label>
+            <input type="text" class="title" id="title" />
+            <label>Author:</label>
+            <input type="text" class="author" id="author" />
+            <label>ISBN:</label>
+            <input type="text" class="isbn" id="isbn" />
+            <label>Tags(separate with ","):</label>
+            <input type="text" class="tags" id="tags" />
+            <button id="addBook" class="add">Add</button>
+        </fieldset>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="books.js"></script>
+</body>
+
+</html>

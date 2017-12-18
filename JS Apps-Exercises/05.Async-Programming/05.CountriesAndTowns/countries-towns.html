@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section h1 {
+            margin: 10px 0px;
+            font-size: 1.2em;
+        }
+        
+        table th {
+            background: #DDD;
+            padding: 10px;
+        }
+        
+        table td {
+            padding: 5px 10px;
+            background: #EEE;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="errorBox"></div>
+    <button id="loadCountries">Load Countries</button>
+    <section id="viewCountries" style="display: none">
+        <h1>Countries</h1>
+        <div id="countries"></div>
+        <div>Add new Country
+            <button id="addBtn">Add</button>
+        </div>
+    </section>
+    <section id="viewTowns" style="display: none">
+        <h2 id="town"></h2>
+        <h1>Towns</h1>
+        <div id="towns">
+        </div>
+        <div>Add new Town
+            <button id="addBtnTown">Add</button>
+        </div>
+    </section>
+    <section id="viewAddCountry" style="display: none">
+        <h1>Add new Country</h1>
+        <form id="formAddCountry">
+            <div>Name:</div>
+            <div><input type="text" id="addCountryText" required/></div>
+            <div><input type="button" id="btnAddNewCountry" value="Add" /></div>
+        </form>
+    </section>
+    <section id="viewEditCountry" style="display: none">
+        <h1>Edit Country</h1>
+        <form id="formEditCountry">
+            <div>Name:</div>
+            <div><input type="text" id="editCountryText" required/></div>
+            <div><input type="button" id="btnEditCountry" value="Edit" /></div>
+        </form>
+    </section>
+    <section id="viewAddTown" style="display: none">
+        <h1>Add new Town</h1>
+        <form id="formAddTown">
+            <div>Town:</div>
+            <div><input type="text" id="townText" required/></div>
+            <div>Country:</div>
+            <div><input type="text" id="countryText" required/></div>
+            <div><input type="button" id="btnAddNewTown" value="Add" /></div>
+        </form>
+    </section>
+    <section id="viewEditTown" style="display: none">
+        <h1>Edit Town</h1>
+        <form id="formEditTown">
+            <div>Name:</div>
+            <div><input type="text" id="editTownText" required/></div>
+            <div><input type="button" id="btnEditTown" value="Edit" /></div>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="countries-towns.js"></script>
+    <script>
+        attachEvents()
+    </script>
+</body>
+
+</html>

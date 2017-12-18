@@ -1,0 +1,37 @@
+[{
+        "_id": "5a05ba1b8078536c9cf79cc1",
+        "title": "My first post",
+        "_acl": {
+            "creator": "kid_Hy3SM47yG"
+        },
+        "body": "This is my first post",
+        "_kmd": {
+            "lmt": "2017-11-10T14:44:54.725Z",
+            "ect": "2017-11-10T14:39:23.548Z"
+        }
+    },
+    {
+        "_id": "5a05bb8206ae5b39b9bb6961",
+        "body": "This is my second post",
+        "_acl": {
+            "creator": "kid_Hy3SM47yG"
+        },
+        "title": "My second post",
+        "_kmd": {
+            "lmt": "2017-11-10T14:45:48.107Z",
+            "ect": "2017-11-10T14:45:22.798Z"
+        }
+    },
+    {
+        "_id": "5a05bbb4ef4ef53505fdb9e5",
+        "body": "This is my third post",
+        "title": "My third post",
+        "_acl": {
+            "creator": "kid_Hy3SM47yG"
+        },
+        "_kmd": {
+            "lmt": "2017-11-10T14:46:12.579Z",
+            "ect": "2017-11-10T14:46:12.579Z"
+        }
+    }
+]
